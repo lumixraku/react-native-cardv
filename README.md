@@ -1,13 +1,45 @@
 
 # react-native-cardv
 
-## Getting started
+## How to generate it ?
 
-`$ npm install react-native-cardv --save`
+Read this
 
-### Mostly automatic installation
+https://medium.com/wix-engineering/creating-a-native-module-in-react-native-93bab0123e46
+
+https://www.jianshu.com/p/091a68ea1ca7
+
+这个package 就是用上面blog 中提到的 `react-native-create-library` 创建的
+
+
+[官方文档](https://reactnative.dev/docs/native-modules-setup) 中说使用 `create-react-native-module`
+但是我用这个命令创建出来的第三方包存在 HMR 报错问题.
+
+
+
+## How to develop ?
+
+本地调试时, 在你的RN 项目中引用你的第三方包
+```
+yarn add /usr/....YOUR_LOCAL_REPO_PATH
+```
+
+之后 node_modules 下就有这个包了
+
+
+
+
+仍然需要手动 link
 
 `$ react-native link react-native-cardv`
+
+
+
+
+
+
+
+
 
 ### Manual installation
 
